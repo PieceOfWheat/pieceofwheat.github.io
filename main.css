@@ -1,0 +1,15 @@
+/* class (preferred by Yuvir)*/
+.main-header {
+    background-color: blue;
+    text-align: center;
+}
+
+/* id (preferred)*/
+#main-content {
+    color: blue;
+}
+
+/* direct targeting*/
+h1 {
+    color:red;
+}
