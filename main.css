@@ -1,15 +1,87 @@
-/* class (preferred by Yuvir)*/
-.main-header {
-    background-color: blue;
-    text-align: center;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-/* id (preferred)*/
-#main-content {
-    color: blue;
+:root {
+    --primary-color: #424242;
+    --text-color: black;
 }
 
-/* direct targeting*/
-h1 {
-    
+header {
+    font-family: Helvetica, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 3rem 0 0 0rem;
 }
+
+/* layouts */
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 100%;
+    }
+}
+
+/* profile */
+.profile {
+    width: 100%;
+    display: flex;
+}
+
+.name-container {
+    width: 60%;
+    background-color: #424242;
+    padding: 2rem clamp(5rem, 8vw, 6rem);
+    color: white;
+}
+
+.name-wrapper {
+    margin: auto;
+    margin-right: 0;
+    width: fit-content;
+}
+
+.heading-text {
+    font-weight: 200;
+    margin: 0 0 0 0;
+    font-size: clamp(2rem, 4vw, 2.2rem);
+}
+
+.profile-sub-text {
+    font-weight: 100;
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    margin: 0;
+    color: white;
+}
+
+.profile-sub-sub-text {
+    font-weight: 20;
+    font-size: clamp(0.5rem, 1vw, 0.75rem);
+    margin: 0;
+    color: white;
+}
+
+.contact-container {
+    width: 40%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+}
+
+.contact-text {
+    margin: 0;
+    font-size: clamp(0.9rem, 2.3vw, 1rem);
+}
+
+.contact-icon {
+    margin-right: 0.5rem;
+    width: 2rem;
+    height: 1.7rem;
+}
+
