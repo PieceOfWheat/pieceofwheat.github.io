@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --bg-black-900: #e4e4f8;
+  --bg-black-100: #f1eaf6;
+  --bg-black-50: #d5cdd8;
+  --text-black-900: #302e4d;
+  --text-black-700: #504e70;
+  --text-primary:red;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-size: 1em;
+  font-family: 'Unna' sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+::before,::after {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  background: var(--bg-black-900);
+  min-height: 100vh;
+  display: block;
+  position: fixed;
+  left: 15em;
+  padding: 0 2.5em;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  opacity: 1;
+}
+
+.container {
+  max-width: 75em;
+  width: 100%;
+  margin: auto;
+}
+
+.sub-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1em;
+  margin-right: -1em;
+  position: relative;
+}
+
+/* ----- Aside ----- */
+aside {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: fixed;
+   width: 15em;
+   background: var(--bg-black-100); 
+   padding: 2em;
+   left: 0;
+   top: 0;
+   border-right: 0.05em solid var(--bg-black-50);
+   height: 100%;
+   z-index: 10;
+}
+
+aside .logo img {
+  top: 1em;
+  height: 10em;
+}
+
+aside .nav {
+  margin-top: 2em;
+  justify-content: center;
+}
+
+.nav li {
+  margin-bottom: 1em;
+  display: block;
+}
+
+.nav a {
+  font-size: 1.2em;
+  font-weight: 600;
+  border-bottom: 0.05em solid var(--bg-black-50);
+  display: block;
+  color: var(--text-black-900);
+  padding: 0.2em 0.5em
+}
+
+.nav li i {
+  margin-right: 0.55em;
+}
+
+.nav-toggle {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  width: 2em;
+  border: 0.05em solid var(--bg-black-50);
+  cursor: pointer;
+  position: fixed;
+  left: 16em;
+  top: 1.5em;
+  border-radius: 0.3em;
+  background:var(--bg-black-100);
+}
+
+.nav-toggle span {
+  font-size: 1.25em;
+}
+
+/* ----- Home Section ----- */
+.home-section {
+  min-height: 100vh;
+  display: flex;
+  color: var(--text-black-900)
+}
+
+.home-section .home-info {
+   flex: 0 0 60%;
+   max-width: 60%;
+}
+
+.home-info h3{
+   font-size: 2em;
+   line-height: 0.3;
+}
+
+.home-info .name {
+   font-size: 1.8em;
+   font-family: 'Tangerine', cursive;
+   font-weight: 700;
+   color: var(--text-primary);
+}
+
+.home-info .profession {
+   font-size: 0.9em;
+   margin-bottom: 2em;
+   line-height: 1.7;
+}
+
+.home-section .home-img {
+   flex: 0 0 40%;
+   max-width: 40%;
+   text-align: center;
+   position: relative;
+}
+.home-section img {
+  height: 20em;
+}
