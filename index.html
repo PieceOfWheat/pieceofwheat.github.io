@@ -21,14 +21,14 @@
           <span class="fa-solid fa-bars"></span>
         </div>
         <ul class="nav">
-          <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
-          <li><a href="#" class="active"><i class="fa fa-user"></i>About</a></li>
-          <li><a href="#" class="active"><i class="fa fa-list"></i>Services</a></li>
-          <li><a href="#" class="active"><i class="fa fa-comments"></i>Contact</a></li>
+          <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+          <li><a href="#about" class="active"><i class="fa fa-user"></i>About</a></li>
+          <!-- <li><a href="#" class="active"><i class="fa fa-list"></i>Services</a></li> -->
+          <li><a href="#contact" class="active"><i class="fa fa-comments"></i>Contact</a></li>
         </ul>
       </aside>
       <main>
-         <section class="home-section">
+         <section id="home" class="home-section">
             <div class="container"> 
                <div class="sub-container">
                   <div class="home-info">
@@ -41,7 +41,7 @@
                         I am energized and motivated by the fulfillment of tasks, and find pleasure in 
                         solving the problems.
                      </p>
-                     <a href="#contact" class="btn contact-me">Contact Me</a>
+                     <a href="#about" class="btn">Learn more about me</a>
                   </div>
                   <div class="home-img">
                      <img src="img/CV Photo.png" alt="Profile Phot">
@@ -50,7 +50,7 @@
             </div> <!-- container -->
          </section>
          
-         <section class="about-section">
+         <section id="about" class="about-section">
             <div class="container">
                <div class="sub-container">
                   <div class="title">
@@ -86,7 +86,7 @@
                      </div>
                      <div class="sub-container">
                         <div class="buttons">
-                           <a href="#" class="btn">Download CV</a>
+                           <a href="files/Daniel_van_der_Merwe.pdf" class="btn">Download CV</a>
                            <a href="#contact" class="btn">Hire Me</a>
                         </div>
                      </div>
@@ -139,20 +139,19 @@
                               <div class="item">
                                  <div class="dot"></div>
                                  <h3 class="date">
-                                    <i class="fa fa-calendar"></i> 2013 - 2015
+                                    <i class="fa fa-calendar"></i> 2020 - 2025
                                  </h3>
                                  <h4 class="title">Bachelors in Computer Engineering</h4>
-                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate ex nam architecto sunt at 
-                                    voluptatibus esse suscipit nostrum, ut nulla. Ad, natus ipsa. Veritatis, in!</p>
+                                 <p>I studied at University of Pretoria, planning to graduate at the end of 2025.</p>
                               </div>
                               <div class="item">
                                  <div class="dot"></div>
                                  <h3 class="date">
-                                    <i class="fa fa-calendar"></i> 2013 - 2015
+                                    <i class="fa fa-calendar"></i> 2019
                                  </h3>
-                                 <h4 class="title">Bachelors in Computer Engineering</h4>
-                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate ex nam architecto sunt at 
-                                    voluptatibus esse suscipit nostrum, ut nulla. Ad, natus ipsa. Veritatis, in!</p>
+                                 <h4 class="title">National Senior Certificate</h4>
+                                 <p>Achieved 8 distinctions with an average of 86%,
+whilst also fulfilling the role of Deputy Head Boy.</p>
                               </div>
                            </div>
                         </div>
@@ -167,20 +166,27 @@
                               <div class="item">
                                  <div class="dot"></div>
                                  <h3 class="date">
-                                    <i class="fa fa-calendar"></i> 2013 - 2015
+                                    <i class="fa fa-calendar"></i> 2024
                                  </h3>
-                                 <h4 class="title">Bachelors in Computer Engineering</h4>
-                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate ex nam architecto sunt at 
-                                    voluptatibus esse suscipit nostrum, ut nulla. Ad, natus ipsa. Veritatis, in!</p>
+                                 <h4 class="title">BBD Software Development <span>(Vac Work)</span></h4>
+                                 <p>During a four-week period, I was part of a team that built a web-app from
+                                    scratch. By working in a team of 10 members, I refined my collaboration
+                                    skills and enhanced my knowledge on agile software development and
+                                    software engineering.</p>
+                              
+                                 <p>During this time, I was also familiarised to industry software development
+                                    standards, which included the use of mono-repositories (like Nx) and
+                                    specialised development software (like Azure, Docker, Flyway & Figma). Furthermore, I was exposed to base skills like Web Development, Database Design, API Design and GitHub. </p>
                               </div>
                               <div class="item">
                                  <div class="dot"></div>
                                  <h3 class="date">
-                                    <i class="fa fa-calendar"></i> 2013 - 2015
+                                    <i class="fa fa-calendar"></i> 2016 & 2017
                                  </h3>
-                                 <h4 class="title">Bachelors in Computer Engineering</h4>
-                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate ex nam architecto sunt at 
-                                    voluptatibus esse suscipit nostrum, ut nulla. Ad, natus ipsa. Veritatis, in!</p>
+                                 <h4 class="title">EHS Bookstore <span>(Sales assistant)</span></h4>
+                                 <p>During the school holidays, I assisted clients in the local bookstore,
+                                    during which I developed strong interpersonal skills. Managing the stock
+                                    of the store greatly improved my planning and organisational skills.</p>
                               </div>
                            </div>
                         </div>
@@ -190,11 +196,25 @@
             </div>
          </section>
 
-         <section class="contact-section">
+         <section id="contact" class="contact-section">
             <div class="container">
                <div class="sub-container">
                   <div class="title">
                      <h2>Contact Me</h2>
+                  </div>
+               </div>
+               <h3 class="title"> Have any questions?</h3>
+               <h4 class="sub-title">Contact me via one of the following channels:</h4>
+               <div class="sub-container">
+                  <div class="item">
+                      <div class="icon"><i class="fa fa-envelope"></i></div>
+                      <h4>Email</h4> 
+                      <p>danielvdmerwe2@gmail.com</p>
+                  </div>
+                  <div class="item">
+                      <div class="icon"><i class="fa fa-globe-africa"></i></div>
+                      <h4>LinkedIn</h4> 
+                      <p><a href="https://www.linkedin.com/in/daniel-van-der-merwe-20660a210">www.linkedin.com/in/daniel-van-der-merwe-20660a210</a></p>
                   </div>
                </div>
             </div>
@@ -203,6 +223,6 @@
     </div>
 
     <!-- JS Files -->
-     <!-- <script src="js/script.js"></script> -->
+     <script src="script.js"></script>
   </body>
 </html>

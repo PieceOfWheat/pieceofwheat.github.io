@@ -11,6 +11,10 @@
   --bar-700: #63728394;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -46,9 +50,13 @@ section {
    background: var(--base-900); 
    color: var(--text);
    min-height: 100vh;
-   width: 83vw;
-   left: 17vw;   
+   width: 83%;
+   left: 17%;   
    padding: 2.5vw;
+}
+
+section:last-child {
+  min-height: 30vh;
 }
 
 section .container {
@@ -113,7 +121,7 @@ aside {
   flex-direction: column;
   align-items: center;
   position: fixed;
-  width: 17vw;
+  width: 17%;
   background: var(--base-100);
   padding: 2vw;
   left: 0;
@@ -132,8 +140,9 @@ aside .logo img {
 }
 
 aside .nav {
-  margin-top: 10vh;
+  margin: 15vh 0vw;
   justify-content: center;
+  justify-items: center;
 }
 
 .nav li {
@@ -144,9 +153,20 @@ aside .nav {
   font-size: 1.0em;
   font-weight: 600;
   border-bottom: 0.05em solid var(--base-500);
+  border-radius: 0.3em;
+  text-align: center;
   display: block;
+  width: 10vw;
   color: white;
-  padding: 1vh 1vw
+  padding: 1vh 0.5vw;
+  padding-left: 0;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+aside .nav a.active {
+  color: white;
+  background: var(--accent);
+  border-radius: 0.3em;
 }
 
 .nav li i {
@@ -208,6 +228,7 @@ aside .nav {
 
 .home-section p {
   margin-bottom: 3vh;
+  
 }
 
 .home-section .home-img {
@@ -375,6 +396,12 @@ aside .nav {
    padding: 0 0.1vw 3.5vh 1.3vw;
 }
 
+.about-section .timeline-box .item span {
+  font-size: 0.8em;
+  font-weight: 500;
+  color: var(--base-100);
+}
+
 .about-section .timeline-box .item:last-child {
    padding-bottom: 0;
 }
@@ -422,4 +449,137 @@ aside .nav {
    font-size: 0.85em;
    text-align: justify;
    color: var(--base-500);
+}
+
+/* ----- Contact Section ----- */
+
+.contact-section .sub-title {
+  color: var(--base-100);
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 5vh;
+}
+
+.contact-section .item {
+  flex: 0 0 50%;
+  max-width: 50%;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-section .item .icon {
+  display: inline-block;
+}
+
+.contact-section .item .icon .fa {
+  font-size: 1em;
+  color: var(--accent);
+}
+
+.contact-section h3 {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 1vh;
+  }
+
+.contact-section .item h4 {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: var(--base-100);
+  text-transform: capitalize;
+  margin: 0vw 0 0.2vw;
+}
+
+.contact-section .item p {
+  font-size: 0.9em;
+  line-height: 0.9em;
+}
+
+@media (max-width:1199px) {
+  aside {
+    left: -20vw;
+  }
+  section {
+    left: 0;
+    width: 100vw;
+  }
+}
+
+
+@media (max-width:991px) {
+
+  .about-section .education,
+  .about-section .experience {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .home-section .home-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .home-section .home-img {
+    display: none;
+  }
+}
+
+@media (max-width:767px) {
+
+  .home-section .name {
+    font-size: 1.3em;
+  }
+
+  .home-section .profession {
+    font-size: 0.8em;
+  }
+
+  .title {
+    font-size: 0.9em;
+  }
+  
+  h2 {
+    font-size: 1.1em;
+  }
+
+  h4 {
+    font-size: 0.9em;
+  }
+
+  h5 {
+    font-size: 0.8em;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+
+  .about-section .info,
+  .about-section .skills {
+    flex: 100%;
+    max-width: 100%;
+    padding: 1vw;
+    margin-top: 2vh;
+  }
+
+  .about-section .info .buttons{
+    margin-top: 1vh;
+    text-align: center;
+    flex: 0 0 100%;
+  }
+
+  .contact-section h3 {
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 1vh;
+  }
+
+  .contact-section .sub-title {
+    margin-bottom: 2vh;
+    font-size: 0.8em;
+  }
+  .contact-section .item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 1vh 1vw 2vh 1vw;
+  }
 }
